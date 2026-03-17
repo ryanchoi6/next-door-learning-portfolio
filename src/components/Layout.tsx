@@ -14,7 +14,6 @@ const navLinks = [
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cvModalOpen, setCvModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
