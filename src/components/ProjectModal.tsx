@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Image, Video, GraduationCap, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Project } from "@/data/projects";
@@ -11,11 +11,20 @@ interface ProjectModalProps {
 type Tab = "gallery" | "video";
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
-  const [activeTab, setActiveTab] = useState<Tab>("gallery");
+  const defaultTab: Tab = project?.theme === "digital-media" ? "video" : "gallery";
+  const [activeTab, setActiveTab] = useState<Tab>(defaultTab);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
+  useEffect(() => {
+    if (project) {
+      setActiveTab(project.theme === "digital-media" ? "video" : "gallery");
+    }
+  }, [project]);
+
+  const isDigitalMedia = project?.theme === "digital-media";
+
   const tabs: { key: Tab; label: string; icon: JSX.Element; available: boolean }[] = [
-    { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: true },
+    { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: !isDigitalMedia },
     { key: "video", label: "Video", icon: <Video size={16} />, available: !!(project?.videoUrls && project.videoUrls.length > 0) },
   ];
 
