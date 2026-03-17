@@ -24,7 +24,7 @@ export const projects: Project[] = [
     thumbnail: "/MS Office Design_Thumbnail.jpg",
     shortIntro: "Students redesigned the Middle School office to encourage greater engagement from the community. ",
     overview: "A 6-week engineering challenge where middle school students iterated through multiple prototypes of load-bearing bridges. Students applied mathematical modeling, material science principles, and collaborative design reviews to optimize their structures for maximum load capacity while minimizing material usage.",
-    level: "Middle School",
+    level: "HIgh School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
