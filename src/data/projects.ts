@@ -102,7 +102,7 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: ["/Flat pack_Rocking Chair.png", "/Flat pack_Rocking Chair2.png", "/Flat pack_Rocking Chair3.png", "/Flat pack_Rocking Chair4.png", "/Flat pack_Rocking Chair5.png", "/Flat Pack Bookshelf.png", "/Flat Pack Bookshelf2.png", "/Flat Pack Bookshelf3.png", "/Flat Pack Bookshelf4.png", "/Flat Pack Bookshelf5.png", "/Flat Pack Bookshelf6.png"],
   },
 
   // ── ENVIRONMENTAL & SCIENCE (2 total) ──
