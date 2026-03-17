@@ -17,7 +17,6 @@ const fadeUp = {
 const levelIcons: Record<string, JSX.Element> = {
   Elementary: <GraduationCap size={16} />,
   "Middle School": <School size={16} />,
-  "High School": <Building2 size={16} />
 };
 
 const Projects = () => {
@@ -33,7 +32,7 @@ const Projects = () => {
     });
   }, [activeTheme, activeLevel]);
 
-  const levels = ["Elementary", "Middle School", "High School"];
+  const levels = ["Elementary", "Middle School"];
 
   return (
     <div className="min-h-screen">
@@ -44,7 +43,7 @@ const Projects = () => {
             Student Work
           </h1>
           <p className="text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed font-body">
-            A curated collection of student projects spanning elementary through high school—each reflecting interdisciplinary thinking, creative rigor, and meaningful engagement with the world.       
+            A curated collection of student projects spanning elementary through middle school—each reflecting interdisciplinary thinking, creative rigor, and meaningful engagement with the world.       
           </p>
         </motion.div>
       </section>
