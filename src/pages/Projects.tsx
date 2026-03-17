@@ -33,7 +33,7 @@ const Projects = () => {
     });
   }, [activeTheme, activeLevel]);
 
-  const levels = ["Elementary", "Middle School"];
+  const levels = ["Elementary", "Middle School", "High School"];
 
   return (
     <div className="min-h-screen">
