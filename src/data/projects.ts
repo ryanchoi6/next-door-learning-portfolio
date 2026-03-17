@@ -83,7 +83,7 @@ export const projects: Project[] = [
   {
     id: "paper-roller-coaster",
     title: "Designing Play: Carnival Game Project",
-    thumbnail: "",
+    thumbnail: "/Speaker_Student_Work_Sample_12.JPG",
     shortIntro: "Students applied design thinking to create carnival games, learning game design, ergonomics, and woodworking. ",
     overview: "Elementary students designed multi-element roller coasters using cardstock and tape. They explored concepts of gravitational potential energy, momentum, and friction as they engineered loops, hills, and turns that kept a marble on track from start to finish.",
     level: "High School",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     id: "geodesic-dome",
     title: "Tiny House Furniture Design",
-    thumbnail: "",
+    thumbnail: "/Carnival_Pinball Machine.png",
     shortIntro: "Students designed flat-pack furniture for a tiny house to develop essential construction skills.",
     overview: "Middle school students studied Buckminster Fuller's geodesic principles and constructed scaled dome models using dowels and connectors. Teams analyzed how triangular geometry distributes loads evenly, comparing dome performance against traditional rectangular frames under compression testing.",
     level: "High School",
