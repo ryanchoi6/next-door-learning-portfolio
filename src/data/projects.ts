@@ -7,7 +7,7 @@ export interface Project {
   thumbnail: string;
   shortIntro: string;
   overview: string;
-  level: 'Elementary' | 'Middle School' | 'High School';
+  level: 'Elementary' | 'Middle School' | 'High School' | 'HIgh School';
   subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design' | 'Environmental & Science' | 'Environmental & Science ' | 'Engineering & Structural';
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     thumbnail: "/MS Office Design_Thumbnail.jpg",
     shortIntro: "Students redesigned the Middle School office to encourage greater engagement from the community. ",
     overview: "A 6-week engineering challenge where middle school students iterated through multiple prototypes of load-bearing bridges. Students applied mathematical modeling, material science principles, and collaborative design reviews to optimize their structures for maximum load capacity while minimizing material usage.",
-    level: "Middle School",
+    level: "HIgh School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     thumbnail: "/Valencia Gardens_Thumbnail.jpg",
     shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
     overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
-    level: "Middle School",
+    level: "High School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
