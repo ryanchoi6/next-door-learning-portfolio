@@ -143,4 +143,4 @@ export const themes = [
 ] as const;
 
 export const levels = ['Elementary', 'Middle School', 'High School'] as const;
-export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science'] as const;
+export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design', 'Environmental & Science', 'Environmental & Science '] as const;
