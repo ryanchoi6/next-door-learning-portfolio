@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Image, Video, GraduationCap, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Project } from "@/data/projects";
