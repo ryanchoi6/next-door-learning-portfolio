@@ -38,7 +38,7 @@ export const projects: Project[] = [
     thumbnail: "/Valencia Gardens_Thumbnail.jpg",
     shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
     overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
-    level: "High School",
+    level: "Middle School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
