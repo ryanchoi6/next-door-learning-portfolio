@@ -138,7 +138,7 @@ export const projects: Project[] = [
   {
     id: "neighborhood-redesign",
     title: "Physics in Motion",
-    thumbnail: "",
+    thumbnail: "/Boat_Student_Work_Sample_8.png",
     shortIntro: "Students applied physics principles and teamwork to build cardboard boats.",
     overview: "Students conducted community interviews, created empathy maps, and identified design opportunities in their school neighborhood. They built scale models of redesigned spaces — including accessible playgrounds, community gardens, and safe walking paths — presenting their proposals to local community members.",
     level: "Middle School",
