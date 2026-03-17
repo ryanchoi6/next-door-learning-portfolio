@@ -1,9 +1,24 @@
 import { useState, useMemo } from "react";
 import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { GraduationCap, School, Building2 } from "lucide-react";
 import ThemeFilter from "@/components/ThemeFilter";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectModal from "@/components/ProjectModal";
 import { projects, type Project } from "@/data/projects";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6 },
+};
+
+const levelIcons: Record<string, JSX.Element> = {
+  Elementary: <GraduationCap size={16} />,
+  "Middle School": <School size={16} />,
+  "High School": <Building2 size={16} />,
+};
 
 const Projects = () => {
   const [activeTheme, setActiveTheme] = useState<string | null>(null);
@@ -24,45 +39,40 @@ const Projects = () => {
     <div className="min-h-screen">
       {/* Header */}
       <section className="container pt-16 pb-8 md:pt-24 md:pb-12">
-        <h1 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-3">
-          Student Work
-        </h1>
-        <p className="text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed">
-          A curated collection of student projects spanning elementary through high school — each designed to develop creativity, critical thinking, and real-world problem solving.
-        </p>
+        <motion.div {...fadeUp}>
+          <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-3">
+            Student Work
+          </h1>
+          <p className="text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed font-body">
+            A curated collection of student projects spanning elementary through high school — each designed to develop creativity, critical thinking, and real-world problem solving.
+          </p>
+        </motion.div>
       </section>
 
       {/* Filters */}
       <section className="container pb-8 space-y-4">
-        <ThemeFilter activeTheme={activeTheme} onThemeChange={setActiveTheme} />
-        
         {/* Level filter */}
         <div className="flex items-center gap-2">
-          <span className="text-[10px] font-mono-ui uppercase tracking-wider text-muted-foreground mr-1">Level:</span>
-          <button
-            onClick={() => setActiveLevel(null)}
-            className={`px-3 py-1 rounded text-[11px] font-mono-ui transition-colors ${
-              activeLevel === null
-                ? "bg-foreground text-background"
-                : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            All
-          </button>
           {levels.map((level) => (
             <button
               key={level}
               onClick={() => setActiveLevel(activeLevel === level ? null : level)}
-              className={`px-3 py-1 rounded text-[11px] font-mono-ui transition-colors ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all border ${
                 activeLevel === level
-                  ? "bg-foreground text-background"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "bg-primary text-primary-foreground border-primary shadow-sm"
+                  : "bg-background text-muted-foreground border-border hover:text-foreground hover:border-foreground/20"
               }`}
             >
+              <span className={activeLevel === level ? "text-primary-foreground" : "text-muted-foreground"}>
+                {levelIcons[level]}
+              </span>
               {level}
             </button>
           ))}
         </div>
+
+        {/* Theme filter */}
+        <ThemeFilter activeTheme={activeTheme} onThemeChange={setActiveTheme} />
       </section>
 
       {/* Project Grid */}
@@ -82,7 +92,7 @@ const Projects = () => {
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-muted-foreground text-sm">No projects match the current filters.</p>
+            <p className="text-muted-foreground text-sm font-body">No projects match the current filters.</p>
           </div>
         )}
       </section>

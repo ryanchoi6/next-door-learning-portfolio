@@ -7,7 +7,7 @@ import CVRequestModal from "./CVRequestModal";
 const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  { path: "/projects", label: "Student Work" },
+  { path: "/projects", label: "Projects" },
   { path: "/ai-teaching", label: "AI in Teaching" },
   { path: "/contact", label: "Contact" },
 ];
@@ -20,21 +20,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       {/* Navigation */}
-      <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <nav className="container flex items-center justify-between h-16">
-          <Link to="/" className="font-display text-xl font-medium tracking-tight text-foreground">
-            Portfolio
+          <Link to="/" className="font-display text-lg font-bold tracking-tight text-foreground">
+            K-12 STEAM Portfolio
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-body text-sm tracking-wide transition-colors ${
+                className={`px-4 py-2 text-sm font-medium transition-colors relative ${
                   location.pathname === link.path
-                    ? "text-primary font-medium"
+                    ? "nav-active"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -63,16 +63,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               transition={{ duration: 0.2 }}
               className="md:hidden overflow-hidden border-t border-border bg-background"
             >
-              <div className="container py-4 flex flex-col gap-3">
+              <div className="container py-4 flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <Link
                     key={link.path}
                     to={link.path}
                     onClick={() => setMenuOpen(false)}
-                    className={`text-sm py-1 ${
+                    className={`text-sm py-2.5 px-3 rounded-lg transition-colors ${
                       location.pathname === link.path
-                        ? "text-primary font-medium"
-                        : "text-muted-foreground"
+                        ? "text-primary font-semibold bg-primary/5"
+                        : "text-muted-foreground hover:bg-secondary"
                     }`}
                   >
                     {link.label}
@@ -90,19 +90,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12">
+      <footer className="border-t border-border py-12 bg-secondary/50">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div>
-              <p className="font-display text-lg text-foreground">The Classroom as a Laboratory of Intent</p>
+              <p className="font-display text-lg font-semibold text-foreground">Learning by Designing, Innovating, Impacting</p>
               <p className="text-sm text-muted-foreground mt-1">11 years of interdisciplinary innovation in K–12 education</p>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4">
               <button
                 onClick={() => setCvModalOpen(true)}
-                className="text-xs font-mono-ui text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors border border-border rounded-full px-4 py-2 hover:border-primary/30"
               >
-                CV Available Upon Request
+                <FileText size={14} />
+                Request CV
               </button>
             </div>
           </div>
