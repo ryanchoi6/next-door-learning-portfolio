@@ -90,7 +90,7 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: ["/Carnival_Maze Runner4.png", "/Carnival_Maze Runner3.png", "/Carnival_Maze Runner2.png", "/Carnival_Maze Runner.jpg", "/Carnival_Pinball Machine.png", "/Carnival_Pinball Machine2.png", "/Carnival_Pinball Machine3.png", "/Carnival_Pinball Machine4.png"],
   },
   {
     id: "geodesic-dome",
