@@ -16,7 +16,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
   const tabs: { key: Tab; label: string; icon: JSX.Element; available: boolean }[] = [
     { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: true },
-    { key: "video", label: "Video", icon: <Video size={16} />, available: !!project?.videoUrl },
+    { key: "video", label: "Video", icon: <Video size={16} />, available: !!(project?.videoUrls && project.videoUrls.length > 0) },
   ];
 
   const closeLightbox = () => setLightboxIndex(null);
