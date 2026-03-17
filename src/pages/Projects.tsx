@@ -58,12 +58,12 @@ const Projects = () => {
             key={level}
             onClick={() => setActiveLevel(activeLevel === level ? null : level)}
             className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all border ${
-            activeLevel === level ?
+            activeLevel === level || activeLevel === null ?
             "bg-primary text-primary-foreground border-primary shadow-sm" :
             "bg-background text-muted-foreground border-border hover:text-foreground hover:border-foreground/20"}`
             }>
             
-              <span className={activeLevel === level ? "text-primary-foreground" : "text-muted-foreground"}>
+              <span className={activeLevel === level || activeLevel === null ? "text-primary-foreground" : "text-muted-foreground"}>
                 {levelIcons[level]}
               </span>
               {level}
