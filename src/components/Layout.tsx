@@ -78,13 +78,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     {link.label}
                   </Link>
                 ))}
-                <button
-                  onClick={() => { setCvModalOpen(true); setMenuOpen(false); }}
-                  className="flex items-center gap-1.5 text-xs font-mono-ui text-muted-foreground hover:text-primary transition-colors py-1"
-                >
-                  <FileText size={14} />
-                  Request CV
-                </button>
               </div>
             </motion.div>
           )}
