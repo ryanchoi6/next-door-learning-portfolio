@@ -118,7 +118,7 @@ export const projects: Project[] = [
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: ["/BioDesign_Student_Work_Sample_1-2.JPG", "/BioDesign_Student_Work_Sample_10.JPG", "/BioDesign_Student_Work_Sample_2.JPG", "/BioDesign_Student_Work_Sample_3.JPG", "/BioDesign_Student_Work_Sample_5.JPG", "/BioDesign_Student_Work_Sample_9.JPG"],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "The intersection of environmental urgency and hands-on engineering created genuine student investment. Several students continued maintaining their greenhouses months after the project ended."
   },
   {
