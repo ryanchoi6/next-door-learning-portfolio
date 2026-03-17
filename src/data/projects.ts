@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     id: "water-filtration",
     title: "Upcycling Coffee Grounds into Functional Design",
-    thumbnail: "",
+    thumbnail: studentWorkSample2,
     shortIntro: "Students collected coffee grounds from the teachers’ lounge and turned them into an aesthetic and functional product.",
     overview: "An environmental engineering project where students investigated local water quality data, designed multi-stage filtration systems, and tested their effectiveness using classroom water testing kits. The project connected environmental science to social justice, as students researched communities worldwide without clean water access.",
     level: "Middle School",
