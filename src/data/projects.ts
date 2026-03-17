@@ -137,14 +137,14 @@ export const projects: Project[] = [
   // ── COMMUNITY & URBAN DESIGN (3 total) ──
   {
     id: "neighborhood-redesign",
-    title: "Our Neighborhood, Reimagined",
+    title: "Physics in Motion",
     thumbnail: "",
-    shortIntro: "Elementary students redesigned their school neighborhood using empathy mapping and model building.",
+    shortIntro: "Students applied physics principles and teamwork to build cardboard boats.",
     overview: "Students conducted community interviews, created empathy maps, and identified design opportunities in their school neighborhood. They built scale models of redesigned spaces — including accessible playgrounds, community gardens, and safe walking paths — presenting their proposals to local community members.",
-    level: "Elementary",
-    subject: "Design",
-    theme: "community",
-    themeLabel: "Community & Urban Design",
+    level: "Middle School",
+    subject: "Engineering & Structural",
+    theme: "engineering",
+    themeLabel: "Engineering & Structural",
     images: [],
     teacherNote: "Watching 8-year-olds interview community elders about accessibility needs was a powerful reminder that design thinking isn't age-dependent — it's empathy-dependent."
   },
