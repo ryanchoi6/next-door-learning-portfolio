@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Image, Video, PenLine, Calendar, Users, Clock } from "lucide-react";
+import { X, Image, Video, GraduationCap } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 interface ProjectModalProps {
@@ -8,7 +8,7 @@ interface ProjectModalProps {
   onClose: () => void;
 }
 
-type Tab = "gallery" | "video" | "reflection";
+type Tab = "gallery" | "video";
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [activeTab, setActiveTab] = useState<Tab>("gallery");
@@ -16,7 +16,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const tabs: { key: Tab; label: string; icon: JSX.Element; available: boolean }[] = [
     { key: "gallery", label: "Gallery", icon: <Image size={16} />, available: true },
     { key: "video", label: "Video", icon: <Video size={16} />, available: !!project?.videoUrl },
-    { key: "reflection", label: "Reflection", icon: <PenLine size={16} />, available: !!project?.teacherNote },
   ];
 
   return (
@@ -73,28 +72,13 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap items-center gap-2 mb-4">
-                  <span className="text-xs font-medium text-foreground bg-secondary border border-border px-3 py-1 rounded-full">
+                  <span className="flex items-center gap-1.5 text-xs font-medium text-foreground bg-secondary border border-border px-3 py-1 rounded-full">
+                    <GraduationCap size={14} className="text-primary" />
                     {project.level}
                   </span>
                   <span className="text-xs font-medium text-primary bg-primary/10 border border-primary/20 px-3 py-1 rounded-full">
                     {project.themeLabel}
                   </span>
-                </div>
-
-                {/* Meta row */}
-                <div className="flex flex-wrap items-center gap-5 text-sm text-muted-foreground mb-6 pb-6 border-b border-border">
-                  <div className="flex items-center gap-1.5">
-                    <Calendar size={14} className="text-primary" />
-                    <span>Year 2023</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <Users size={14} className="text-primary" />
-                    <span>Team 5 Students</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <Clock size={14} className="text-primary" />
-                    <span>Duration 6 Weeks</span>
-                  </div>
                 </div>
 
                 {/* Overview */}
@@ -163,23 +147,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                           allowFullScreen
                           title={`${project.title} video`}
                         />
-                      </div>
-                    </motion.div>
-                  )}
-
-                  {activeTab === "reflection" && project.teacherNote && (
-                    <motion.div
-                      key="reflection"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div className="bg-secondary/50 border border-border rounded-xl p-6">
-                        <h4 className="text-xs font-medium uppercase tracking-wider text-primary mb-3">Teacher's Reflection</h4>
-                        <p className="text-sm text-foreground leading-relaxed italic font-body">
-                          "{project.teacherNote}"
-                        </p>
                       </div>
                     </motion.div>
                   )}
