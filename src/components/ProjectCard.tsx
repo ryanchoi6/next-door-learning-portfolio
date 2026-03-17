@@ -44,20 +44,16 @@ const ProjectCard = ({ project, index, onClick }: ProjectCardProps) => {
           <h3 className="font-display text-base font-semibold text-foreground mb-1 leading-snug">
             {project.title}
           </h3>
-          {project.theme !== "digital-media" && (
-            <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2 font-body">
-              {project.shortIntro}
-            </p>
-          )}
+          <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2 font-body">
+            {project.shortIntro}
+          </p>
 
           {/* Metadata */}
-          {project.theme !== "digital-media" && (
-            <div className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
-              <span>{project.level}</span>
-              <span className="text-border">·</span>
-              <span>{project.subject}</span>
-            </div>
-          )}
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+            <span>{project.level}</span>
+            <span className="text-border">·</span>
+            <span>{project.subject}</span>
+          </div>
 
           {/* Accent bar */}
           <div className={`h-1 w-12 rounded-full mt-3 ${themeColor[project.theme] || "bg-primary"}`} />
