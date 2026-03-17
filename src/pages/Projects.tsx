@@ -11,13 +11,13 @@ const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6 },
+  transition: { duration: 0.6 }
 };
 
 const levelIcons: Record<string, JSX.Element> = {
   Elementary: <GraduationCap size={16} />,
   "Middle School": <School size={16} />,
-  "High School": <Building2 size={16} />,
+  "High School": <Building2 size={16} />
 };
 
 const Projects = () => {
@@ -44,7 +44,7 @@ const Projects = () => {
             Student Work
           </h1>
           <p className="text-muted-foreground text-sm md:text-base max-w-2xl leading-relaxed font-body">
-            A curated collection of student projects spanning elementary through high school — each designed to develop creativity, critical thinking, and real-world problem solving.
+            A curated collection of student projects spanning elementary through high school—each reflecting interdisciplinary thinking, creative rigor, and meaningful engagement with the world.       
           </p>
         </motion.div>
       </section>
@@ -53,22 +53,22 @@ const Projects = () => {
       <section className="container pb-8 space-y-4">
         {/* Level filter */}
         <div className="flex items-center gap-2">
-          {levels.map((level) => (
-            <button
-              key={level}
-              onClick={() => setActiveLevel(activeLevel === level ? null : level)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all border ${
-                activeLevel === level
-                  ? "bg-primary text-primary-foreground border-primary shadow-sm"
-                  : "bg-background text-muted-foreground border-border hover:text-foreground hover:border-foreground/20"
-              }`}
-            >
+          {levels.map((level) =>
+          <button
+            key={level}
+            onClick={() => setActiveLevel(activeLevel === level ? null : level)}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all border ${
+            activeLevel === level ?
+            "bg-primary text-primary-foreground border-primary shadow-sm" :
+            "bg-background text-muted-foreground border-border hover:text-foreground hover:border-foreground/20"}`
+            }>
+            
               <span className={activeLevel === level ? "text-primary-foreground" : "text-muted-foreground"}>
                 {levelIcons[level]}
               </span>
               {level}
             </button>
-          ))}
+          )}
         </div>
 
         {/* Theme filter */}
@@ -79,28 +79,28 @@ const Projects = () => {
       <section className="container pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project, index) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                index={index}
-                onClick={() => setSelectedProject(project)}
-              />
-            ))}
+            {filteredProjects.map((project, index) =>
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              onClick={() => setSelectedProject(project)} />
+
+            )}
           </AnimatePresence>
         </div>
 
-        {filteredProjects.length === 0 && (
-          <div className="text-center py-20">
+        {filteredProjects.length === 0 &&
+        <div className="text-center py-20">
             <p className="text-muted-foreground text-sm font-body">No projects match the current filters.</p>
           </div>
-        )}
+        }
       </section>
 
       {/* Project Modal */}
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Projects;
