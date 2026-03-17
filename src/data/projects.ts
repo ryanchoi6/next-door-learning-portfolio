@@ -28,7 +28,7 @@ export const projects: Project[] = [
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: [],
+    images: ["/MS Office Design_Student_Work_Sample_1.png", "/MS Office Design_Student_Work_Sample_3.jpg", "/MS Office Design_Student_Work_Sample_4.JPG"],
     teacherNote: "This project was designed to make abstract physics concepts tangible. By the third iteration, students were naturally using engineering vocabulary — tensile strength, compression, load distribution — in their peer critiques."
   },
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: [],
+    images: ["/Valencia Gardens_Student_Work_Sample_3.PNG", "/Valencia Gardens_Student_Work_Sample_4.PNG", "/Valencia Gardens_Student_Work_Sample_5.PNG"],
     teacherNote: "The shake table transformed failure from something students feared into something they analyzed. 'It collapsed at 6.2' became a data point, not a defeat."
   },
   {
