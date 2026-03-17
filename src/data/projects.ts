@@ -66,7 +66,7 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: [],
+    images: ["/Speaker_Student_Work_Sample_12.JPG", "/Speaker_Student_Work_Sample_15.JPG", "/Speaker_Student_Work_Sample_3.jpg", "/Speaker_Student_Work_Sample_4.jpg", "/Speaker_Student_Work_Sample_5.png"],
   },
   {
     id: "wind-turbine-design",
