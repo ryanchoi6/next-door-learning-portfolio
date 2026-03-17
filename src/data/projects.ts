@@ -93,7 +93,7 @@ export const projects: Project[] = [
     subject: "Environmental & Science ",
     theme: "environmental",
     themeLabel: "Environmental & Science",
-    images: ["/Student_Work_Sample_3.JPG", "/Student_Work_Sample_4-2.JPG"],
+    images: ["/Student_Work_Sample_3.JPG", "/Student_Work_Sample_4-2.JPG", "/Student_Work_Sample_5.JPG"],
     teacherNote: "When students tested their first filter and saw murky water become clear, the room went silent. That moment — when science stops being abstract — is why I teach."
   },
   {
