@@ -71,7 +71,7 @@ export const projects: Project[] = [
   {
     id: "wind-turbine-design",
     title: "Words and Light: A Social Typography Project",
-    thumbnail: "",
+    thumbnail: "/Lamp_Student_Work_Sample_6.png",
     shortIntro: "Students used words, imagery, and custom typography to create a lamp symbolizing hope and inspiring social change.",
     overview: "High school students explored aerodynamics and renewable energy by designing turbine blades from balsa wood and foam core. Using a classroom wind tunnel and voltage meters, teams tested blade pitch, curvature, and count to maximize electrical output from a small DC motor.",
     level: "Middle School",
