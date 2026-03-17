@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sage: {
+          DEFAULT: "hsl(var(--sage))",
+          foreground: "hsl(var(--sage-foreground))",
+        },
+        sky: {
+          DEFAULT: "hsl(var(--sky))",
+          foreground: "hsl(var(--sky-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,21 +65,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        ceramic: {
-          50: "hsl(40 25% 97%)",
-          100: "hsl(40 20% 95%)",
-          200: "hsl(40 15% 90%)",
-        },
-        terracotta: {
-          DEFAULT: "hsl(15 45% 45%)",
-          light: "hsl(15 35% 60%)",
-          muted: "hsl(15 20% 70%)",
-        },
       },
       fontFamily: {
-        display: ["'Newsreader'", "Georgia", "serif"],
-        body: ["'Geist'", "system-ui", "sans-serif"],
-        "mono-ui": ["'Geist Mono'", "ui-monospace", "monospace"],
+        display: ["'Inter'", "system-ui", "sans-serif"],
+        body: ["'Open Sans'", "'Inter'", "system-ui", "sans-serif"],
+        "mono-ui": ["'Inter'", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
