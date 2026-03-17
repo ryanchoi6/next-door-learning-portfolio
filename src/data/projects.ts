@@ -5,7 +5,7 @@ export interface Project {
   shortIntro: string;
   overview: string;
   level: 'Elementary' | 'Middle School' | 'High School';
-  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary';
+  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design';
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
   images: string[];
@@ -33,8 +33,8 @@ export const projects: Project[] = [
     thumbnail: "",
     shortIntro: "High school students engineered functional micro greenhouses powered by solar energy systems.",
     overview: "An interdisciplinary project combining environmental science, electrical engineering, and sustainable design. Students designed, built, and monitored solar-powered micro greenhouses equipped with automated watering systems and temperature sensors. The project culminated in a community presentation on food sustainability.",
-    level: "High School",
-    subject: "STEAM",
+    level: "Middle School",
+    subject: "Community & Urban Design",
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: [],
@@ -143,4 +143,4 @@ export const themes = [
 ] as const;
 
 export const levels = ['Elementary', 'Middle School', 'High School'] as const;
-export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary'] as const;
+export const subjects = ['STEAM', 'Design', 'Engineering', 'Art', 'Interdisciplinary', 'Community & Urban Design'] as const;
