@@ -5,7 +5,7 @@ export interface Project {
   shortIntro: string;
   overview: string;
   level: 'Elementary' | 'Middle School' | 'High School';
-  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design' | 'Environmental & Science';
+  subject: 'STEAM' | 'Design' | 'Engineering' | 'Art' | 'Interdisciplinary' | 'Community & Urban Design' | 'Environmental & Science' | 'Environmental & Science ';
   theme: 'engineering' | 'environmental' | 'community' | 'digital-media';
   themeLabel: string;
   images: string[];
