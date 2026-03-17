@@ -1,3 +1,5 @@
+import studentWorkSample4 from "@/assets/student-work-sample-4.jpg";
+
 export interface Project {
   id: string;
   title: string;
@@ -30,7 +32,7 @@ export const projects: Project[] = [
   {
     id: "solar-greenhouse",
     title: "Biodegradable Packaging as an Alternative to Plastic",
-    thumbnail: "",
+    thumbnail: studentWorkSample4,
     shortIntro: "Students collaborated with Kitava restaurant and created biodegradable mycelium packaging as alternatives to plastic. ",
     overview: "An interdisciplinary project combining environmental science, electrical engineering, and sustainable design. Students designed, built, and monitored solar-powered micro greenhouses equipped with automated watering systems and temperature sensors. The project culminated in a community presentation on food sustainability.",
     level: "Middle School",
