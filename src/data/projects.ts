@@ -31,13 +31,13 @@ export const projects: Project[] = [
     images: ["/MS Office Design_Student_Work_Sample_1.png", "/MS Office Design_Student_Work_Sample_3.jpg", "/MS Office Design_Student_Work_Sample_4.JPG", "/MS Office_Sample_5.png"],
     teacherNote: "This project was designed to make abstract physics concepts tangible. By the third iteration, students were naturally using engineering vocabulary — tensile strength, compression, load distribution — in their peer critiques."
   },
-  {
-    id: "earthquake-structures",
-    title: "Learning Through Play: Affordable Housing Playground",
-    thumbnail: "",
-    shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
-    overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
-    level: "High School",
+   {
+     id: "earthquake-structures",
+     title: "Learning Through Play: Affordable Housing Playground",
+     thumbnail: "",
+     shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
+     overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
+     level: "Middle School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
