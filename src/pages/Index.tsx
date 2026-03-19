@@ -24,32 +24,49 @@ const Index = () => {
     <div>
       {/* Hero */}
       <section className="container pt-20 pb-16 md:pt-32 md:pb-24">
-        <motion.div {...fadeUp} className="max-w-3xl">
-          <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground leading-[1.1] mb-6">
-            Play. Build. Create.{" "}
-            <span className="text-primary">Transform.</span>
-          </h1>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-8 font-body">
-            An interdisciplinary K-12 educator specializing in STEAM, Design, Engineering, and Art — 
-            designing project-based learning experiences that prepare students for a future that 
-            doesn't yet exist.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              to="/projects"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity shadow-sm"
-            >
-              Explore Projects
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full text-sm font-semibold hover:bg-secondary transition-colors"
-            >
-              Get in Touch
-            </Link>
-          </div>
-        </motion.div>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <motion.div {...fadeUp}>
+            <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground leading-[1.1] mb-6">
+              Play. Build. Create.{" "}
+              <span className="text-primary">Transform.</span>
+            </h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mb-8 font-body">
+              An interdisciplinary K-12 educator specializing in STEAM, Design, Engineering, and Art — 
+              designing project-based learning experiences that prepare students for a future that 
+              doesn't yet exist.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity shadow-sm"
+              >
+                Explore Projects
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full text-sm font-semibold hover:bg-secondary transition-colors"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-secondary border border-border shadow-card"
+          >
+            <iframe
+              src="https://player.vimeo.com/video/1174755421?autoplay=1&muted=1&controls=0&loop=1&title=0&byline=0&portrait=0"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="Profile Video"
+            />
+          </motion.div>
+        </div>
       </section>
 
       {/* Stats */}
@@ -90,8 +107,12 @@ const Index = () => {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-card-hover transition-all duration-300"
                 >
-                  <div className="aspect-[4/3] bg-secondary flex items-center justify-center">
-                    <span className="font-display text-3xl font-bold text-primary/20">{project.title[0]}</span>
+                  <div className="aspect-[4/3] bg-secondary flex items-center justify-center overflow-hidden">
+                    {project.thumbnail ? (
+                      <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="font-display text-3xl font-bold text-primary/20">{project.title[0]}</span>
+                    )}
                   </div>
                   <div className="p-4">
                     <h3 className="font-display text-base font-semibold text-foreground mb-1">{project.title}</h3>
