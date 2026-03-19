@@ -21,28 +21,28 @@ export const projects: Project[] = [
   {
     id: "bridge-challenge",
     title: "Reimagining the Middle School Office",
-    thumbnail: "/MS Office Design_Thumbnail.jpg",
+    thumbnail: "/MS-Office-Design_Thumbnail.jpg",
     shortIntro: "Students redesigned the Middle School office to encourage greater engagement from the community. ",
     overview: "A 6-week engineering challenge where middle school students iterated through multiple prototypes of load-bearing bridges. Students applied mathematical modeling, material science principles, and collaborative design reviews to optimize their structures for maximum load capacity while minimizing material usage.",
     level: "Middle School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: ["/MS Office Design_Student_Work_Sample_1.png", "/MS Office Design_Student_Work_Sample_3.jpg", "/MS Office Design_Student_Work_Sample_4.JPG", "/MS Office_Sample_5.png"],
+    images: ["/MS-Office-Design_Student_Work_Sample_1.png", "/MS-Office-Design_Student_Work_Sample_3.jpg", "/MS-Office-Design_Student_Work_Sample_4.JPG", "/MS-Office_Sample_5.png"],
     videoUrls: ["https://player.vimeo.com/video/1174450985", "https://player.vimeo.com/video/1174450316", "https://player.vimeo.com/video/1174460156"],
     teacherNote: "This project was designed to make abstract physics concepts tangible. By the third iteration, students were naturally using engineering vocabulary — tensile strength, compression, load distribution — in their peer critiques."
   },
   {
     id: "earthquake-structures",
     title: "Learning Through Play: Affordable Housing Playground",
-    thumbnail: "/Valencia Gardens_Thumbnail.jpg",
+    thumbnail: "/Valencia-Gardens_Thumbnail.jpg",
     shortIntro: "Students designed a playground for an affordable housing community using 3D modeling and augmented reality.",
     overview: "A rigorous engineering design challenge where high school students researched, prototyped, and tested earthquake-resistant building designs. Using a classroom shake table, teams tested their structures against increasing magnitudes. The project integrated physics, materials science, and iterative design methodology.",
     level: "Middle School",
     subject: "Community & Urban Design",
     theme: "community",
     themeLabel: "Community & Urban Design",
-    images: ["/Valencia Gardens_Student_Work_Sample_3.PNG", "/Valencia Gardens_Student_Work_Sample_4.PNG", "/Valencia Gardens_Student_Work_Sample_5.PNG"],
+    images: ["/Valencia-Gardens_Student_Work_Sample_3.PNG", "/Valencia-Gardens_Student_Work_Sample_4.PNG", "/Valencia-Gardens_Student_Work_Sample_5.PNG"],
     videoUrls: ["https://player.vimeo.com/video/1174458881"],
     teacherNote: "The shake table transformed failure from something students feared into something they analyzed. 'It collapsed at 6.2' became a data point, not a defeat."
   },
@@ -92,19 +92,19 @@ export const projects: Project[] = [
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: ["/Carnival_Maze Runner4.png", "/Carnival_Maze Runner3.png", "/Carnival_Maze Runner2.png", "/Carnival_Maze Runner.jpg", "/Carnival_Pinball Machine.png", "/Carnival_Pinball Machine2.png", "/Carnival_Pinball Machine3.png", "/Carnival_Pinball Machine4.png"],
+    images: ["/Carnival_Maze-Runner4.png", "/Carnival_Maze-Runner3.png", "/Carnival_Maze-Runner2.png", "/Carnival_Maze-Runner.jpg", "/Carnival_Pinball-Machine.png", "/Carnival_Pinball-Machine2.png", "/Carnival_Pinball-Machine3.png", "/Carnival_Pinball-Machine4.png"],
   },
   {
     id: "geodesic-dome",
     title: "Tiny House Furniture Design",
-    thumbnail: "/Carnival_Pinball Machine.png",
+    thumbnail: "/Carnival_Pinball-Machine.png",
     shortIntro: "Students designed flat-pack furniture for a tiny house to develop essential construction skills.",
     overview: "Middle school students studied Buckminster Fuller's geodesic principles and constructed scaled dome models using dowels and connectors. Teams analyzed how triangular geometry distributes loads evenly, comparing dome performance against traditional rectangular frames under compression testing.",
     level: "High School",
     subject: "Engineering & Structural",
     theme: "engineering",
     themeLabel: "Engineering & Structural",
-    images: ["/Flat pack_Rocking Chair.png", "/Flat pack_Rocking Chair2.png", "/Flat pack_Rocking Chair3.png", "/Flat pack_Rocking Chair4.png", "/Flat pack_Rocking Chair5.png", "/Flat Pack Bookshelf.png", "/Flat Pack Bookshelf2.png", "/Flat Pack Bookshelf3.png", "/Flat Pack Bookshelf4.png", "/Flat Pack Bookshelf5.png", "/Flat Pack Bookshelf6.png"],
+    images: ["/Flat-pack_Rocking-Chair.png", "/Flat-pack_Rocking-Chair2.png", "/Flat-pack_Rocking-Chair3.png", "/Flat-pack_Rocking-Chair4.png", "/Flat-pack_Rocking-Chair5.png", "/Flat-Pack-Bookshelf.png", "/Flat-Pack-Bookshelf2.png", "/Flat-Pack-Bookshelf3.png", "/Flat-Pack-Bookshelf4.png", "/Flat-Pack-Bookshelf5.png", "/Flat-Pack-Bookshelf6.png"],
   },
 
   // ── ENVIRONMENTAL & SCIENCE (2 total) ──
@@ -119,7 +119,6 @@ export const projects: Project[] = [
     theme: "environmental",
     themeLabel: "Environmental & Science",
     images: ["/BioDesign_Student_Work_Sample_1-2.JPG", "/BioDesign_Student_Work_Sample_10.JPG", "/BioDesign_Student_Work_Sample_2.JPG", "/BioDesign_Student_Work_Sample_3.JPG", "/BioDesign_Student_Work_Sample_5.JPG", "/BioDesign_Student_Work_Sample_9.JPG"],
-    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "The intersection of environmental urgency and hands-on engineering created genuine student investment. Several students continued maintaining their greenhouses months after the project ended."
   },
   {
@@ -190,7 +189,6 @@ export const projects: Project[] = [
     theme: "digital-media",
     themeLabel: "Art & Digital Media",
     images: [],
-    videoUrls: ["https://www.youtube.com/embed/dQw4w9WgXcQ"],
     teacherNote: "Stop-motion taught patience in a way no lecture could. Students learned that quality requires hundreds of small, intentional decisions."
   },
   {
